@@ -1,0 +1,11 @@
+<script>!function(){var e=window.EWF=window.EWF||{};if(!e.invoked){e.invoked=!0,e.queue=[],e.load=function(){e.queue.push(arguments)}}}();</script>
+<script src="https://cdn.ewf.to/ewf-loader.js" async></script>
+
+<!-- Mounted App -->
+<div style="height: calc(100vh - 62px);">
+  <div class="EWF__app" data-base-path="workflows" ></div>
+</div>
+
+<script type="text/javascript">
+  EWF.load("<%= ENV['EMBED_WORKFLOW_PK_LIVE'] %>", { jwt: "<%= @jwt_token %>" });
+</script>
